@@ -1,0 +1,34 @@
+.outer__card__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 4px 10px 4px;
+}
+.card__title{
+    font-weight: lighter;
+}
+.card__container{
+    width: 90%;
+    height: 200px;
+
+}
+
+.card__header{
+    display: flex;
+    justify-content: flex-start;
+    height: 20%;
+}
+
+.card__legend{
+    margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+.btn{
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: inherit;
+    border-radius:7px ;
+    
+    cursor: pointer;
+    
+}
+
+.btn--succes{
+    padding: 11px 94px;
+    color:white;
+    background-color: hsl(109, 36%, 52%);
+}
+
+.btn--succes:hover{
+    background-color: hsl(137, 70%, 50%);
+
+}

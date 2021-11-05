@@ -1,0 +1,19 @@
+@import-normalize;
+@import 'button.css';
+@import 'item-card.css';
+@import 'item-list.css';
+
+*, *::before,  *::after {
+    font-family: Gotham Rounded, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+.app__body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
