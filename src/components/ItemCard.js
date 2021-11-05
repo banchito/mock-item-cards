@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {ItemsContext} from './App'
+import { NavLink } from 'react-router-dom';
 
 export default function ItemCard(props) {
-  const { description, id, imageUrls, name, variants } = props;
+  const { id, name, variants } = props;
+
+  const {handleItemSelect} = useContext(ItemsContext)
 
   let extraItems = 0;
   const addExtra = () => extraItems += 1
@@ -18,14 +22,14 @@ export default function ItemCard(props) {
                 addExtra();
                 return null;
               }
-              return <p key={variant.id}>{variant.name}</p>;
+              return <p key={variant.id}><span className="item">Item</span>  {index + 1} - {variant.name}</p>;
             })}
 
             {extraItems ? <p>{`...plus ${extraItems} more`}</p> : null}
           </div>
         </div>
         <div className="items-list__select-btn-container">
-          <button className="btn btn--succes">select</button>
+          <NavLink to={`/${id}`} className="btn btn--succes" onClick={()=> handleItemSelect(id)}>select</NavLink>
         </div>
       </div>
       <h3 className="card__legend">{name}</h3>

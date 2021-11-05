@@ -1,16 +1,16 @@
-.btn{
+.btn, a {
     background: none;
     border: none;
     outline: none;
     font-weight: bold;
     font-size: inherit;
     border-radius:7px ;
-    
+    text-decoration: none;
     cursor: pointer;
     
 }
 
-.btn--succes{
+.btn--succes, a{
     padding: 11px 94px;
     color:white;
     background-color: hsl(109, 36%, 52%);
@@ -18,5 +18,15 @@
 
 .btn--succes:hover{
     background-color: hsl(137, 70%, 50%);
+
+}
+
+.btn--primary{
+    color:white;
+    background-color: hsl(200, 100%, 50%);
+}
+
+.btn--primary:hover{
+    background-color: hsl(200, 100%, 35%);
 
 }

@@ -1,0 +1,35 @@
+.variant-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(196, 193, 193);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    
+}
+.inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:5%;
+    height: 80%;
+}
+
+.variant-card__header{
+    display: flex;
+    font-weight: bold;
+}
+
+.variant-content{
+    display: flex;
+    font-weight: 100;
+    margin-bottom: 17%;
+}
+
+.variant-card__footer{
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+    color: hsl(109, 36%, 52%);
+}
