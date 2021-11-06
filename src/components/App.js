@@ -40,7 +40,6 @@ export default function App() {
       <Router>
       <Header selectedItemId={selectedItemId}/>
         <div className="app__body">
-        
           <Switch>
             <Route path="/items">
               <ItemList items={items} />

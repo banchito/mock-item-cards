@@ -40,3 +40,15 @@
   width: 80%;
   height: 30%;
 }
+
+
+@media only screen and (max-width: 587px) {
+    .item-detail__container{
+     flex-direction: column;
+     align-items: center;
+    } 
+    .variants-container{
+        align-items: center;
+    }
+ }
+ 

@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin:5%;
-    height: 80%;
+    height: 200px;
 }
 
 .variant-card__header{
@@ -25,6 +25,7 @@
     display: flex;
     font-weight: 100;
     margin-bottom: 17%;
+    line-height: 20px;
 }
 
 .variant-card__footer{

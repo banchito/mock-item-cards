@@ -9,6 +9,7 @@
   "scripts": {
     "start:db": "json-server -p 3001 seed.js",
     "start:app": "react-scripts start",
+    "build": "react-scripts build",
     "start": "concurrently \"yarn start:db\" \"yarn start:app\""
   },
   "dependencies": {
