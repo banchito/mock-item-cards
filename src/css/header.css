@@ -1,62 +1,63 @@
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    height: 60px;
-    background: rgb(244, 246, 245);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    overflow: hidden;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  height: 60px;
+  background: rgb(244, 246, 245);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
-.back-to{
-    display: flex;
-    align-items: center;
-    background-color: rgb(244, 246, 245);
-    color: hsl(200, 100%, 50%);
+
+.back-to {
+  display: flex;
+  align-items: center;
+  background-color: rgb(244, 246, 245);
+  color: hsl(200, 100%, 50%);
 }
-.back-to:hover{
-    background-color: rgb(244, 246, 245);
-    color: hsl(200, 100%, 35%)
+
+.back-to:hover {
+  background-color: rgb(244, 246, 245);
+  color: hsl(200, 100%, 35%);
 }
 
 .chevron {
-    position:relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 9px;
-    height:6px; 
-    transform: rotate(90deg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 9px;
+  height: 6px;
+  transform: rotate(90deg);
 }
 
-.chevron:hover{
-    color: hsl(200, 100%, 35%)
+.chevron:hover {
+  color: hsl(200, 100%, 35%);
 }
 
 .chevron::before,
 .chevron::after {
-    position:absolute;
-    display:block;
-    content:"";
-    border:10px solid transparent; 
+  position: absolute;
+  display: block;
+  content: '';
+  border: 10px solid transparent;
 }
 
 .chevron::before {
-    top:-2px;
-    border-top-color:hsl(200, 100%, 50%);
+  top: -2px;
+  border-top-color: hsl(200, 100%, 50%);
 }
 
-.chevron:hover:before{
-    border-top-color: hsl(200, 100%, 35%)
+.chevron:hover:before {
+  border-top-color: hsl(200, 100%, 35%);
 }
 
 .chevron::after {
-    top:-8px; 
-    border-top-color:rgb(244, 246, 245); 
+  top: -8px;
+  border-top-color: rgb(244, 246, 245);
 }
 
-.chevron-text{
-    font-size: 25px;
+.chevron-text {
+  font-size: 25px;
 }
-

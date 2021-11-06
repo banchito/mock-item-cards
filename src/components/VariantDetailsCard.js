@@ -1,8 +1,6 @@
-import React from 'react'
-
 export default function VariantDetailsCard(props) {
     const {name, description, price} = props
-    console.log(name, description, price)
+
     return (
         <div className="variant-card">
             <div className="inner-container">

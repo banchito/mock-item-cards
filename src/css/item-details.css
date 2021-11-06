@@ -49,8 +49,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 5%;
-    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-bottom: 2%;
     width: 80%;
   }
   .variants-container {

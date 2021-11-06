@@ -14,6 +14,7 @@ import '../css/app.css';
 export const ItemsContext = React.createContext();
 
 export default function App() {
+    
   const [selectedItemId, setSelectedItemId] = useState();
   const [items, setItems] = useState([]);
 
@@ -38,7 +39,7 @@ export default function App() {
   return (
     <ItemsContext.Provider value={itemsContextValue}>
       <Router>
-      <Header selectedItemId={selectedItemId}/>
+        <Header selectedItemId={selectedItemId} />
         <div className="app__body">
           <Switch>
             <Route path="/items">

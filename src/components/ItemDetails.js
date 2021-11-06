@@ -1,4 +1,3 @@
-import React from 'react';
 import VariantDetailsCard from './VariantDetailsCard';
 
 export default function ItemDetails({itemDetail}) {
@@ -6,7 +5,7 @@ export default function ItemDetails({itemDetail}) {
 
     return (
         <div className="item-detail__container">
-            <div className="item-image" alt={name}><img src={imageUrls[0].url}></img></div>
+            <div className="item-image" alt={name}>{imageUrls.length > 0 && <img src={imageUrls[0].url}></img>}</div>
             <div className="variants-container">
                 <div className="variants-container__header">
                     <h3 className="variants-title">{name}</h3>
