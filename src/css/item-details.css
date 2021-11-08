@@ -41,6 +41,10 @@
 }
 
 @media only screen and (max-width: 1300px) {
+  .variants-card__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .item-detail__container {
     flex-direction: column;
     align-items: center;
@@ -57,6 +61,14 @@
     align-items: center;
   }
 }
+
+@media only screen and (max-width: 823px) {
+  .variants-card__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (max-width: 555px) {
   .item-detail__container {
     margin-left: 10px;

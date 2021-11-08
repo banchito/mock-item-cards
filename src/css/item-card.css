@@ -13,6 +13,7 @@
   border-radius: 10px;
   width: 95%;
   margin: 10px 4px 10px 4px;
+  position: relative;
 }
 
 .card__title {
@@ -20,8 +21,13 @@
 }
 
 .card__container {
-  width: 90%;
-  height: 200px;
+  width: 93%;
+  height: 80%;
+  margin-left: 6%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .card__header {
@@ -42,6 +48,45 @@ p {
 
 .item {
   font-weight: 100;
+}
+
+.items-list__select-btn-container{
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Full overlay - Tier II */
+.card__image{
+   display: block;
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
+.card__overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: .5s ease;
+  border-radius: 10px;
+}
+
+.card:hover .card__overlay {
+  opacity: 1;
+}
+
+.card:hover .card__image {
+  opacity: 0.3;
 }
 
 @media only screen and (max-width: 587px) {
